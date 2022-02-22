@@ -1,0 +1,101 @@
+body {
+  color: white;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1264px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.col {
+  width: 30%;
+  min-height: 120px;
+  margin-bottom: 10px;
+  background-color: orange;
+}
+.col img {
+  width: 100%;
+}
+
+.col p {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.col p::first-line {
+  font-weight: bold;
+}
+.top-container {
+  width: 100%;
+  height: 80px;
+  background-color: grey;
+  margin-bottom: 50px;
+  position: fixed;
+}
+header {
+  display: flex;
+  max-width: 1264px;
+  min-height: 80px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  border: solid 1px white;
+  padding: 5px 10px;
+}
+.bb {
+  font-weight: bold;
+}
+.companymenu {
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .col {
+    width: 45%;
+  }
+  nav a {
+    display: block;
+    padding: 2px 15px;
+    font-size: 12px;
+    text-align: center;
+  }
+  nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
+  .text {
+    text-align: center;
+    padding: 30px 30px;
+  }
+  .companymenu1 {
+    margin-right: 20px;
+  }
+  .companymenu {
+    display: flex;
+  }
+  nav a {
+    border: none;
+    background-color: orange;
+  }
+}
+@media (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
+}
